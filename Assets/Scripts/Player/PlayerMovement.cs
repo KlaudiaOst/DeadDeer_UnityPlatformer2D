@@ -19,9 +19,17 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool facingRight = true;
 
+    private int extraJumps;
+    public int extraJumpsValue;
+
+    private bool sprint;
+    public float _sprint;
+    public float AfterSprintSpeed;
+
 
     // Start is called before the first frame update
     void Start() {
+        extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         isGrounded = true;
@@ -56,11 +64,19 @@ public class PlayerMovement : MonoBehaviour {
             transform.localScale = Scaler;
         }
 
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
+        
+        if(isGrounded == true)
+        {
+            extraJumps = extraJumpsValue;
+        }
+        //extrajump
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded ) {
             rb.AddForce(new Vector2(0, jumpForce));
             isGrounded = false;
+            extraJumps--;
             
+        }else if(Input.GetKeyDown(KeyCode.Space) && isGrounded == true && extraJumps == 0) {
+            rb.velocity = Vector2.up * jumpForce;
         }
 
         animator.SetFloat("jump", rb.velocity.y);
@@ -83,7 +99,23 @@ public class PlayerMovement : MonoBehaviour {
 
         }
 
-
+        //sprint
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            sprint = true;
+        }
+        if (sprint = true)
+        {
+            speed = _sprint;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            sprint = false;
+        }
+        if(sprint == false)
+        {
+            speed = AfterSprintSpeed;
+        }
     }
 
     
