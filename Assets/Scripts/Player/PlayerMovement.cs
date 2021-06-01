@@ -39,10 +39,28 @@ public class PlayerMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            sprint = true;
+        }
+        ////if (sprint = true)
+        ////{
+        ////    speed = _sprint;
+        ////}
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            sprint = false;
+        }
 
-        
-
-        float xDisplacement = Input.GetAxis("Horizontal") * speed;
+        float xDisplacement = Input.GetAxis("Horizontal");// * speed;
+        if (sprint)
+        {
+            xDisplacement *= _sprint;
+        }
+        else
+        {
+            xDisplacement *= speed;
+        }
         rb.velocity = new Vector2(xDisplacement, rb.velocity.y);
         animator.SetFloat("speed", rb.velocity.x);
 
@@ -75,8 +93,9 @@ public class PlayerMovement : MonoBehaviour {
             isGrounded = false;
             extraJumps--;
             
-        }else if(Input.GetKeyDown(KeyCode.Space) && isGrounded == true && extraJumps == 0) {
-            rb.velocity = Vector2.up * jumpForce;
+        }else if(Input.GetKeyDown(KeyCode.Space) && isGrounded == false && extraJumps == 0) {
+            rb.AddForce(new Vector2(0, jumpForce));
+            extraJumps--;
         }
 
         animator.SetFloat("jump", rb.velocity.y);
@@ -99,23 +118,25 @@ public class PlayerMovement : MonoBehaviour {
 
         }
 
+
+        //fixed update dodaæ
         //sprint
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             sprint = true;
         }
-        if (sprint = true)
-        {
-            speed = _sprint;
-        }
+        ////if (sprint = true)
+        ////{
+        ////    speed = _sprint;
+        ////}
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             sprint = false;
         }
-        if(sprint == false)
-        {
-            speed = AfterSprintSpeed;
-        }
+        //if(sprint == false)
+        //{
+        //    speed = AfterSprintSpeed;
+        //}
     }
 
     
@@ -123,6 +144,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col) {
         isGrounded = true;
+        extraJumps = extraJumpsValue;
         if (col.gameObject.tag == "Barrel")
         {
             Destroy(animator.gameObject);

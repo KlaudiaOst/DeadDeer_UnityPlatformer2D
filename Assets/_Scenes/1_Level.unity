@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 4845538982095157879, guid: 831287dd251093d4b9d6babf41562470,
         type: 3}
       propertyPath: _sprint
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4845538982095157879, guid: 831287dd251093d4b9d6babf41562470,
         type: 3}
@@ -233,7 +233,8 @@ PrefabInstance:
       propertyPath: whatIsGround.m_Bits
       value: 256
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4845538982095157877, guid: 831287dd251093d4b9d6babf41562470, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 831287dd251093d4b9d6babf41562470, type: 3}
 --- !u!4 &219792625 stripped
 Transform:
