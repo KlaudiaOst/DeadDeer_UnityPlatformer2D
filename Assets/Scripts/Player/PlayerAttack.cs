@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public int attackDamage = 2;
     public void Attack()
     {
         
@@ -16,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
         foreach(Collider2D enemy in hitEnemies)
         {
             Debug.Log("Ciach" + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(2);
+            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
             
         }
 
