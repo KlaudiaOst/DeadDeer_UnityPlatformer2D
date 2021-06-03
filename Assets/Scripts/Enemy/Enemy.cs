@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
         if (currentHealth <= 0)
         {
             //Destroy(gameObject);
@@ -27,6 +28,15 @@ public class Enemy : MonoBehaviour
             Die();
 
         }
+    }
+    void Die()
+    {
+        Debug.Log("Enemy died");
+        animator.SetBool("dead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -44,14 +54,6 @@ public class Enemy : MonoBehaviour
 
 
 
-    void Die()
-    {
-        Debug.Log("Enemy died");
-        animator.SetBool("dead", true);
 
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-        
-    }
 }
 

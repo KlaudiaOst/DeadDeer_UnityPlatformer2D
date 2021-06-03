@@ -3464,6 +3464,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackDamage: 2
+  attackRate: 2
 --- !u!1 &1645566253
 GameObject:
   m_ObjectHideFlags: 0
