@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
     public float AfterSprintSpeed;
 
 
-    // Start is called before the first frame update
+    
     void Start() {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour {
        // current = transform.position.y;
     }
 
-    // Update is called once per frame
+    
     void Update() {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -142,12 +142,27 @@ public class PlayerMovement : MonoBehaviour {
     
 
 
-    void OnCollisionEnter2D(Collision2D col) {
+    void OnCollisionEnter2D(Collision2D collision) {
+
         isGrounded = true;
         extraJumps = extraJumpsValue;
-        if (col.gameObject.tag == "Barrel")
+
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            transform.parent = collision.gameObject.transform;
+        }
+
+        if (collision.gameObject.tag == "Barrel")
         {
             Destroy(animator.gameObject);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if ( collision.gameObject.tag == "Platform")
+        {
+            transform.parent = null;
         }
     }
 }

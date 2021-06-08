@@ -56,7 +56,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void UpdateHUD()
     {
-        GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersHealth(health);
+        //GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersHealth(health);
 
     }
 
@@ -75,7 +75,7 @@ public class PlayerHealth : MonoBehaviour
 
     public IEnumerator Die()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         PlayerPrefs.SetInt("Health", 3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
