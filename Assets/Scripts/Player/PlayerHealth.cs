@@ -77,11 +77,11 @@ public class PlayerHealth : MonoBehaviour
 
     public IEnumerator Die()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         animator.SetTrigger("death");
         PlayerPrefs.SetInt("Health", 3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        animator.gameObject.GetComponent<PlayerMovement>().enabled = true;
+        
     }
     
 }
