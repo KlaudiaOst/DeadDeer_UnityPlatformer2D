@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
             animator.gameObject.GetComponent<PlayerMovement>().enabled = false;
             //Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>();
             //rb.velocity = new Vector2(0, rb.velocity.y)
-            Die();
+            StartCoroutine(Die());
             
         }
 
@@ -77,8 +77,8 @@ public class PlayerHealth : MonoBehaviour
 
     public IEnumerator Die()
     {
-        yield return new WaitForSeconds(1);
         animator.SetTrigger("death");
+        yield return new WaitForSeconds(3);        
         PlayerPrefs.SetInt("Health", 3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         

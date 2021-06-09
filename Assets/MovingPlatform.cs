@@ -7,7 +7,7 @@ public class MovingPlatform : MonoBehaviour
     public float speed;
     public Transform pos1;
     public Transform pos2;
-    bool turnback;
+    public bool turnback;
 
 
     void Start()
@@ -18,21 +18,21 @@ public class MovingPlatform : MonoBehaviour
     
     void Update()
     {
-        if(transform.position.y >= pos1.position.y)
+        if(transform.localPosition.y <= pos1.localPosition.y)
         {
             turnback = true;
         }
-        if(transform.position.y <= pos2.position.y)
+        if(transform.localPosition.y >= pos2.localPosition.y)
         {
             turnback = false;
         }
         if (turnback)
         {
-            transform.position = Vector2.MoveTowards(transform.position, pos2.position, speed * Time.deltaTime);
+            transform.localPosition = Vector2.MoveTowards(transform.localPosition, pos2.localPosition, speed * Time.deltaTime);
         }
         else
         {
-            transform.position = Vector2.MoveTowards(transform.position, pos1.position, speed * Time.deltaTime);
+            transform.localPosition = Vector2.MoveTowards(transform.localPosition, pos1.localPosition, speed * Time.deltaTime);
         }
     }
 }
