@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public Animator animator;
     public int health;
-    public const int MAX_HEALTH = 3;
+    public const int MAX_HEALTH = 5;
 
     
 
@@ -57,7 +57,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void UpdateHUD()
     {
-        //GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersHealth(health);
+        GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersHealth(health);
 
     }
 

@@ -10,11 +10,6 @@ public class MovingPlatform : MonoBehaviour
     public bool turnback;
 
 
-    void Start()
-    {
-        
-    }
-
     
     void Update()
     {
