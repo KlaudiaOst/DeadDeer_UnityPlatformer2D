@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerScore : MonoBehaviour
 {
-    public int score ;
+    public int coins;
     //Text score;
 
     //void Start()
@@ -20,19 +20,19 @@ public class PlayerScore : MonoBehaviour
 
     void Start()
     {
-        score = 0;
+        coins = 0;
         UpdateHUD();
     }
 
     public void ScoreCount(int count)
     {
-        score += count;
+        coins += count; 
         UpdateHUD();
     }
 
     public void UpdateHUD()
     {
-        GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersScore(score);
+        GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersScore(coins);
 
     }
 

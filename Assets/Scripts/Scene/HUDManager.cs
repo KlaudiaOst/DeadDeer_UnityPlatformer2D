@@ -8,17 +8,22 @@ public class HUDManager : MonoBehaviour
     public Text playerHealth;
     public Text playerScore;
     public Text playerHeal;
+    public Text playerSouls;
     
 
     public void SetPlayersHealth(int health)
     {
-        playerHealth.text = $"Health: {health}";
+        playerHealth.text = $"HEALTH: {health}";
     }
 
-    public void SetPlayersScore(int score)
+    public void SetPlayersScore(int coins)
     {
-        playerScore.text = $"Score: {score}";
+        playerScore.text = $"COINS: {coins}";
     }
 
-    
+    public void SetPlayersSouls(int souls)
+    {
+        playerSouls.text = $"SOULS: {souls}";
+    }
+
 }

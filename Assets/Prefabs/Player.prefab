@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 4845538982095157876}
   - component: {fileID: 4845538982095157867}
   - component: {fileID: 4845538982095157866}
-  - component: {fileID: 4845538982095157865}
   - component: {fileID: 4845538982095157864}
-  - component: {fileID: 4845538982095157879}
   - component: {fileID: 4845538982095157878}
-  - component: {fileID: 4845538982095157877}
+  - component: {fileID: 4845538982095157865}
+  - component: {fileID: 4845538982095157879}
+  - component: {fileID: 6518241674523776161}
+  - component: {fileID: 5331110090709768293}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1801608579
-  m_SortingLayer: 3
+  m_SortingLayer: 1
   m_SortingOrder: 4
   m_Sprite: {fileID: -1669565270320768014, guid: cf23d87ce1a0dc04a8fbb8a44e2bc664,
     type: 3}
@@ -115,20 +116,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0333333, y: 1.5}
   m_EdgeRadius: 0
---- !u!114 &4845538982095157865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4845538982095157875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab72b842d13fc774ba55659e55b850b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  health: 3
 --- !u!50 &4845538982095157864
 Rigidbody2D:
   serializedVersion: 4
@@ -150,20 +137,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4845538982095157879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4845538982095157875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca639771aed9a154f9152a963c4d23cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 600
 --- !u!95 &4845538982095157878
 Animator:
   serializedVersion: 3
@@ -183,7 +156,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4845538982095157877
+--- !u!114 &4845538982095157865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,9 +165,66 @@ MonoBehaviour:
   m_GameObject: {fileID: 4845538982095157875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9ef68fc8044dd041a77517feb9c6a42, type: 3}
+  m_Script: {fileID: 11500000, guid: ab72b842d13fc774ba55659e55b850b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  health: 3
+--- !u!114 &4845538982095157879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845538982095157875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca639771aed9a154f9152a963c4d23cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpForce: 600
+  groundCheck: {fileID: 0}
+  checkRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  extraJumpsValue: 0
+  _sprint: 0
+  AfterSprintSpeed: 0
+--- !u!114 &6518241674523776161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845538982095157875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d3b34362630b241b768559a6fc309b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!114 &5331110090709768293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845538982095157875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c0ac97784a074aad0ddd8ed7aab36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4845538982095157878}
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  attackDamage: 2
+  attackRate: 2
 --- !u!1 &4845538983955950364
 GameObject:
   m_ObjectHideFlags: 0

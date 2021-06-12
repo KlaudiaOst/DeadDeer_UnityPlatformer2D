@@ -15,7 +15,8 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         
-        health = 3;
+        health = 5;
+
 
         if(PlayerPrefs.HasKey("Health"))
         {
@@ -66,7 +67,7 @@ public class PlayerHealth : MonoBehaviour
         {
             animator.SetTrigger("death");
             Debug.Log(collision);
-            animator.gameObject.GetComponent<PlayerMovement>().enabled = false;
+            
             //Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>();
             //rb.velocity = new Vector2(0, rb.velocity.y)
             StartCoroutine(Die());
@@ -78,6 +79,7 @@ public class PlayerHealth : MonoBehaviour
     public IEnumerator Die()
     {
         animator.SetTrigger("death");
+        animator.gameObject.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(3);        
         PlayerPrefs.SetInt("Health", 3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

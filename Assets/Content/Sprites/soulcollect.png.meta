@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: f9e83c339c5bb784ab3d0354f55dc997
+guid: eccebd9afaec46545a1b0cd73a3f3839
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5115618752126089108
-    second: player_idle_0
+      213: -4650332504307956703
+    second: soulcollect_8
   - first:
-      213: -5050664382621690000
-    second: player_idle_1
+      213: -1738365745028023087
+    second: soulcollect_10
   - first:
-      213: -5937766766644145194
-    second: player_idle_2
+      213: 1358103364905861668
+    second: soulcollect_13
+  - first:
+      213: 7266022989419341689
+    second: soulcollect_15
+  - first:
+      213: -4375210547486997628
+    second: soulcollect_16
+  - first:
+      213: -8923190531729503316
+    second: soulcollect_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,29 +89,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_idle_0
+      name: soulcollect_8
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 31
-        height: 45
+        x: 55
+        y: 68
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c68823149dba109b0800000000000000
-      internalID: -5115618752126089108
+      spriteID: 1248541d933b67fb0800000000000000
+      internalID: -4650332504307956703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_1
+      name: soulcollect_10
       rect:
         serializedVersion: 2
-        x: 106
-        y: 3
-        width: 32
-        height: 45
+        x: 83
+        y: 76
+        width: 17
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 077dd1ae08f68e9b0800000000000000
-      internalID: -5050664382621690000
+      spriteID: 1dcb5eda09510e7e0800000000000000
+      internalID: -1738365745028023087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_2
+      name: soulcollect_13
       rect:
         serializedVersion: 2
-        x: 138
-        y: 3
-        width: 29
-        height: 45
+        x: 107
+        y: 86
+        width: 15
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +149,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d35e0bd590d89da0800000000000000
-      internalID: -5937766766644145194
+      spriteID: 4220a7990d3f8d210800000000000000
+      internalID: 1358103364905861668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soulcollect_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 93
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977692e696916d460800000000000000
+      internalID: 7266022989419341689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soulcollect_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483ce7b10312843c0800000000000000
+      internalID: -4375210547486997628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soulcollect_17
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 62
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab422d0d757a2480800000000000000
+      internalID: -8923190531729503316
       vertices: []
       indices: 
       edges: []
