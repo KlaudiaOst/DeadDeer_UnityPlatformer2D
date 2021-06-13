@@ -16,7 +16,11 @@ public class LevelLoader : MonoBehaviour
                 int health = GameObject.Find("Player").GetComponent<PlayerHealth>().health;
                 PlayerPrefs.SetInt("Health", health);
 
-               
+                int coins = GameObject.Find("Player").GetComponent<PlayerScore>().coins;
+                PlayerPrefs.SetInt("Coins", coins);
+
+                int souls = GameObject.Find("Player").GetComponent<PlayerSouls>().souls;
+                PlayerPrefs.SetInt("Souls", souls);
 
                 SceneManager.LoadScene(sceneNameToLoad);
             }

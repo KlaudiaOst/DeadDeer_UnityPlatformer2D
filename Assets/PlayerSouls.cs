@@ -9,6 +9,12 @@ public class PlayerSouls : MonoBehaviour
     void Start()
     {
         souls = 0;
+
+        if (PlayerPrefs.HasKey("Souls"))
+        {
+            souls = PlayerPrefs.GetInt("Souls");
+        }
+
         UpdateHUD();
     }
 

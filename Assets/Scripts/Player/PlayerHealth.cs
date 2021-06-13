@@ -22,10 +22,7 @@ public class PlayerHealth : MonoBehaviour
         {
             health = PlayerPrefs.GetInt("Health");
         }
-        if (PlayerPrefs.HasKey("Coins"))
-        {
-            health = PlayerPrefs.GetInt("Coins");
-        }
+    
 
         UpdateHUD();
     }
@@ -81,7 +78,7 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("death");
         animator.gameObject.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(3);        
-        PlayerPrefs.SetInt("Health", 3);
+        PlayerPrefs.SetInt("Health", 5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
     }

@@ -21,6 +21,12 @@ public class PlayerScore : MonoBehaviour
     void Start()
     {
         coins = 0;
+
+        if (PlayerPrefs.HasKey("Coins"))
+        {
+            coins = PlayerPrefs.GetInt("Coins");
+        }
+
         UpdateHUD();
     }
 
