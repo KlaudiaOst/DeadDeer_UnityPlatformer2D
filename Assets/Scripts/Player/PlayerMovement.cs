@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetTrigger("death");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             animator.SetTrigger("heal");
         }
