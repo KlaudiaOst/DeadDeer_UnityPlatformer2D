@@ -123,6 +123,11 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetTrigger("bullet");
         }
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            animator.SetTrigger("specialAttack");
+        }
+
 
         //fixed update dodaæ
         //sprint

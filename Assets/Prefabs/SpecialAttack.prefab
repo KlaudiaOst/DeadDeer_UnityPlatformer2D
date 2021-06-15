@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1848548583133009990}
   - component: {fileID: 6334032477567796324}
   - component: {fileID: 1034247484169840894}
-  - component: {fileID: 56247912161916213}
+  - component: {fileID: 2136374194}
   m_Layer: 0
   m_Name: SpecialAttack
   m_TagString: Untagged
@@ -138,7 +138,7 @@ MonoBehaviour:
   speed: 5
   damage: 5
   rb: {fileID: 1848548583133009990}
---- !u!95 &56247912161916213
+--- !u!95 &2136374194
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
