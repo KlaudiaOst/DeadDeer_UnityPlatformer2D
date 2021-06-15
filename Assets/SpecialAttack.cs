@@ -2,25 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bow : MonoBehaviour
+public class SpecialAttack : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    float nextAttackTime = 0f;
-    public float attackRate = 2f;
-
+    
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire2"))
         {
             Shoot();
         }
     }
 
-    void Shoot ()
+    void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        nextAttackTime = Time.time + 1f / attackRate;
+        
     }
 }

@@ -112,10 +112,15 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetTrigger("heal");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             animator.SetTrigger("attack");
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {           
+            animator.SetTrigger("bullet");
         }
 
 
