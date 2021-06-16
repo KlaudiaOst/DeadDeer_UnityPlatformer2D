@@ -11,7 +11,13 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = transform.right * speed;      
+        //rb.velocity = new Vector2(); //transform.right * speed;      
+    }
+
+    public void SetVelocity(float direction)
+    {
+        rb.velocity = new Vector2(speed * direction, 0);
+        transform.localScale = new Vector3(direction, 1, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

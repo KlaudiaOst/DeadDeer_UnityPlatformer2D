@@ -12,9 +12,15 @@ public class SpecialAttackBullet : MonoBehaviour
     {
         //odniesienie do huda, czy mam wystarczającą liczbę dusz
         //tutaj chcę odczekać chwilę
-        rb.velocity = transform.right * speed;
+        //rb.velocity = transform.right * speed;
     }
 
+    public IEnumerator WaitAndShoot(float direction)
+    {
+        transform.localScale = new Vector3(direction, 1, 0);
+        yield return new WaitForSeconds(2f);
+        rb.velocity = new Vector2(speed * direction, 0);       
+    }
     
     private void OnTriggerEnter2D(Collider2D collision)
     {

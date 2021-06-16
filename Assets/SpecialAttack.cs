@@ -11,14 +11,16 @@ public class SpecialAttack : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Fire2"))
-        {
+        { 
+            //dodatkowy if ze skryptu z zebranymi duszami 
             Shoot();
         }
     }
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        
+        GameObject go =  Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        SpecialAttackBullet sab = go.GetComponent<SpecialAttackBullet>();
+        StartCoroutine(sab.WaitAndShoot(transform.localScale.x));
     }
 }

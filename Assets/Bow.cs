@@ -20,7 +20,8 @@ public class Bow : MonoBehaviour
 
     void Shoot ()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        go.GetComponent<Bullet>().SetVelocity(transform.localScale.x);
         nextAttackTime = Time.time + 1f / attackRate;
     }
 }
