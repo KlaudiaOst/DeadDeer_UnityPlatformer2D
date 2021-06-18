@@ -18,7 +18,7 @@ public class SpecialAttackBullet : MonoBehaviour
     public IEnumerator WaitAndShoot(float direction)
     {
         transform.localScale = new Vector3(direction, 1, 0);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         rb.velocity = new Vector2(speed * direction, 0);       
     }
     

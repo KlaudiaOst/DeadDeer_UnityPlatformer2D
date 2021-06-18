@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4034693374636976165}
   - component: {fileID: 3558091504008500087}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6728934829776862009}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,11 +168,11 @@ GameObject:
   - component: {fileID: 4257280638105295607}
   - component: {fileID: 2654764314031448187}
   - component: {fileID: 6954618085106112264}
-  - component: {fileID: 576168237799597257}
   - component: {fileID: 6728934829777834780}
   - component: {fileID: 6728934829777837281}
   - component: {fileID: 1234315727078197090}
-  m_Layer: 0
+  - component: {fileID: 6728934831180305636}
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -364,26 +364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
---- !u!114 &576168237799597257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6728934829777834775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 560c0ac97784a074aad0ddd8ed7aab36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 6728934829777834774}
-  attackPoint: {fileID: 0}
-  attackRange: 0.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  attackDamage: 2
-  attackRate: 2
 --- !u!114 &6728934829777834780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +410,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 5277400641752278548}
+  bulletPrefab: {fileID: 6250226247585203278, guid: 533a9024624e822458a68f48871a6628,
+    type: 3}
+  attackRate: 2
+--- !u!114 &6728934831180305636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728934829777834775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf7d901a456f4f4096e75fccd2b38ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 5277400641752278548}
+  bulletPrefab: {fileID: 9195476062422424190, guid: f7a7318ecab7c7c44818e8b06085acbe,
+    type: 3}
 --- !u!1 &6728934830678216140
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6728934830678216143}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -471,7 +469,7 @@ GameObject:
   - component: {fileID: 6728934830946771845}
   - component: {fileID: 6728934830946771847}
   - component: {fileID: 6728934830946771844}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

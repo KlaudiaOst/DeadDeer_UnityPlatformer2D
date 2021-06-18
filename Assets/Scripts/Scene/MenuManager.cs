@@ -7,16 +7,25 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject firstMenuView;
     public GameObject secondMenuView;
+    public GameObject creditsMenuView;
 
     public void ShowFirstMenuView()
     {
         firstMenuView.SetActive(true);
         secondMenuView.SetActive(false);
+        creditsMenuView.SetActive(false);
     }
     public void ShowSecondMenuView()
     {
         firstMenuView.SetActive(false);
         secondMenuView.SetActive(true);
+        creditsMenuView.SetActive(false);
+    }
+    public void ShowCreditsMenuView()
+    {
+        firstMenuView.SetActive(false);
+        secondMenuView.SetActive(false);
+        creditsMenuView.SetActive(true);
     }
 
     public void LoadScene(string sceneName)
