@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public const int MAX_HEALTH = 5;
 
+    //public HealthBar healthBar;
+
     void Start()
     {
         
@@ -19,7 +21,9 @@ public class PlayerHealth : MonoBehaviour
         {
             health = PlayerPrefs.GetInt("Health");
         }
-    
+
+       // healthBar.SetMaxHealth(MAX_HEALTH);
+
 
         UpdateHUD();
     }
@@ -34,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(Die());
             
         }
+       // healthBar.SetHealth(health);
 
         UpdateHUD();
     }
