@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!95 &3060144578364809585
 Animator:
   serializedVersion: 3
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb489a31eb0a2a4c816c90d04c9c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 739421716, guid: 3edfbaaaf9a98dd40a6c4df08943a327, type: 3}
+  agent: {fileID: 0}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
