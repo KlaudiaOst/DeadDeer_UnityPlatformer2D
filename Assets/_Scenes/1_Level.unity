@@ -5513,6 +5513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d37bf74ab636e7418711bc9ab23320a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 97304028}
+  dialogueText: {fileID: 1111944806}
+  animator: {fileID: 880719983}
 --- !u!1001 &799737698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5680,7 +5683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0284, y: -75.013}
+  m_AnchoredPosition: {x: -2.0284, y: -459}
   m_SizeDelta: {x: 304.0567, y: 50.025787}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834676792
@@ -5725,7 +5728,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 834676793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 834676795}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &834676793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5784,7 +5798,7 @@ MonoBehaviour:
       alive...
     - Hovewer, we can restore their souls once more. In order to do that, we have
       to kill the Valkyrie Queen.
-    - By doing so, we can use half of my heart, which she stolen.
+    - By doing so, we can use half of my heart, which she had stolen.
     - Please hero... You're our only hope.
 --- !u!4 &877777328 stripped
 Transform:
@@ -5872,6 +5886,7 @@ GameObject:
   - component: {fileID: 880719980}
   - component: {fileID: 880719982}
   - component: {fileID: 880719981}
+  - component: {fileID: 880719983}
   m_Layer: 5
   m_Name: ImageConversation
   m_TagString: Untagged
@@ -5939,6 +5954,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880719979}
   m_CullTransparentMesh: 0
+--- !u!95 &880719983
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880719979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51a10e88d1740e142a738a13f438d629, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &885881809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3046084255423121446, guid: 571b5c28d1b2df248b7351521cd101c9,
@@ -6267,7 +6301,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1061877311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 789081418}
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061877311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6371,8 +6416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -70, y: -20}
-  m_SizeDelta: {x: -260, y: -240}
+  m_AnchoredPosition: {x: -85, y: -43.100006}
+  m_SizeDelta: {x: -290, y: -123.39435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111944806
 MonoBehaviour:
@@ -6406,7 +6451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Our legendary waririor...
+  m_Text: Our legendary warior...
 --- !u!222 &1111944807
 CanvasRenderer:
   m_ObjectHideFlags: 0
