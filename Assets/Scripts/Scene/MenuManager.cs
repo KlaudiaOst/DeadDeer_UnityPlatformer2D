@@ -30,7 +30,9 @@ public class MenuManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        PlayerPrefs.SetInt("Health", 3);
+        PlayerPrefs.SetInt("Health", 5); 
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Souls", 0);
         SceneManager.LoadScene(sceneName);
     }
     public void CloseApplication()

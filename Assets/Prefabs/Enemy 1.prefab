@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3060144578364809580}
   - component: {fileID: 3060144578364809582}
   - component: {fileID: 739421709}
-  - component: {fileID: 739421716}
   m_Layer: 9
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -170,6 +169,8 @@ MonoBehaviour:
   damage: 1
   knockbackForce: 300
   maxHealth: 3
+  player: {fileID: 0}
+  isFlipped: 0
 --- !u!114 &739421709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb489a31eb0a2a4c816c90d04c9c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 739421716}
+  agent: {fileID: 739421716, guid: 3edfbaaaf9a98dd40a6c4df08943a327, type: 3}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -198,25 +199,3 @@ MonoBehaviour:
   attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0
---- !u!195 &739421716
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3060144578364809584}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 1.3392857
-  m_Speed: 2
-  m_Acceleration: 3
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1.8214285
-  m_BaseOffset: 0.91071427
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4

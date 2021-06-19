@@ -22,10 +22,10 @@ public class PlayerScore : MonoBehaviour
     {
         coins = 0;
 
-        //if (PlayerPrefs.HasKey("Coins"))
-        //{
-        //    coins = PlayerPrefs.GetInt("Coins");
-        //}
+        if (PlayerPrefs.HasKey("Coins"))
+        {
+            coins = PlayerPrefs.GetInt("Coins");
+        }
 
         UpdateHUD();
     }

@@ -9,9 +9,6 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public const int MAX_HEALTH = 5;
 
-    
-
-
     void Start()
     {
         
@@ -48,6 +45,8 @@ public class PlayerHealth : MonoBehaviour
         {
             health = MAX_HEALTH;
         }
+
+        UpdateHUD();
     }
     
     
@@ -79,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
         animator.gameObject.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(3);        
         PlayerPrefs.SetInt("Health", 5);
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("Souls", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
     }

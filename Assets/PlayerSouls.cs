@@ -10,10 +10,10 @@ public class PlayerSouls : MonoBehaviour
     {
         souls = 0;
 
-        //if (PlayerPrefs.HasKey("Souls"))
-        //{
-        //    souls = PlayerPrefs.GetInt("Souls");
-        //}
+        if (PlayerPrefs.HasKey("Souls"))
+        {
+            souls = PlayerPrefs.GetInt("Souls");
+        }
 
         UpdateHUD();
     }
