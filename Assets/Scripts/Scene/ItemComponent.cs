@@ -86,7 +86,7 @@ public class ItemComponent : MonoBehaviour
             {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 PlayerHealth health = player.GetComponent<PlayerHealth>();
-                health.Heal(1);
+                health.Heal(2);
                 
                 //animacje
             } else if(type == ItemType.WEAPON)

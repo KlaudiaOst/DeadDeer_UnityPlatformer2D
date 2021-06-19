@@ -7,14 +7,17 @@ public class Boss : MonoBehaviour
     public Transform player;
     public int damage;
     public float knockbackForce = 300;
-    public int maxHealth = 3;
+    public int maxHealth = 50;
     int currentHealth;
 
     public bool isFlipped = false;
 
+    public HealthBar healthBar;
+
     private void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void LookAtPlayer()
@@ -39,6 +42,8 @@ public class Boss : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
