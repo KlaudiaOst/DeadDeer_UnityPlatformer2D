@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   sprite: {fileID: -7973265764592430195, guid: 3ae4a545d7fc31d429640a053876ab76, type: 3}
   itemName: Health Potion
-  description: Healuje
-  defaultQuantity: 1
+  description: Eat it
+  defaultQuantity: 2

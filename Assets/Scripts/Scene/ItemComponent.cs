@@ -7,6 +7,8 @@ public class ItemComponent : MonoBehaviour
 {
     public int quantityNumber;
 
+    Animator animator;
+
     int health;
     [Header("Settings")]
     public Item item;
@@ -85,6 +87,7 @@ public class ItemComponent : MonoBehaviour
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 PlayerHealth health = player.GetComponent<PlayerHealth>();
                 health.Heal(1);
+                
                 //animacje
             } else if(type == ItemType.WEAPON)
             {

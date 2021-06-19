@@ -39,7 +39,8 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.Log("Ciach" + enemy.name);
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-            
+            enemy.GetComponent<BossHealth>().TakeDamage(attackDamage);
+
         }
 
     }

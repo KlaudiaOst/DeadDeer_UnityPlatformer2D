@@ -12,7 +12,7 @@ public class ItemObject : MonoBehaviour
     void Start()
     {
         isCollision = false;
-        GameObject inventoryOBJ = GameObject.Find("Inventory");
+        GameObject inventoryOBJ = GameObject.Find("InventoryOBJ");
         inventory = inventoryOBJ.GetComponent<Inventory>();
 
         //GetComponent<SpriteRenderer>().sprite = item.sprite;
@@ -25,6 +25,7 @@ public class ItemObject : MonoBehaviour
         {
            if (inventory.PickUp(item))
             {
+                Debug.Log("pickup");
                 Destroy(gameObject);
             }
         }

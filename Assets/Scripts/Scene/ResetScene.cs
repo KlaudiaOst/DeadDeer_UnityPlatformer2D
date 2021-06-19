@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ResetScene : MonoBehaviour
 {
- private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
