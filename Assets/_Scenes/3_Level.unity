@@ -4054,8 +4054,6 @@ GameObject:
   - component: {fileID: 816931874}
   - component: {fileID: 816931878}
   - component: {fileID: 816931879}
-  - component: {fileID: 816931880}
-  - component: {fileID: 816931881}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
@@ -4207,44 +4205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1164558788}
-  isFlipped: 0
---- !u!114 &816931880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816931873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e84ca40947f4334e91076a57f7506fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 1
-  enragedAttackDamage: 2
-  attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 0
---- !u!114 &816931881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816931873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54652bf4214aace4fb650166cb8b7b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
+  damage: 2
   knockbackForce: 300
-  damage: 0
-  player: {fileID: 0}
-  deathEffect: {fileID: 0}
-  isInvulnerable: 0
+  maxHealth: 50
+  isFlipped: 0
 --- !u!1 &953053430
 GameObject:
   m_ObjectHideFlags: 0
