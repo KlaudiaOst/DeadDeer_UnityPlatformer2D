@@ -73,7 +73,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8676679, b: 0.14978641, a: 1}
-  m_Intensity: 6.06
+  m_Intensity: 7.75
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 10
@@ -360,7 +360,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   extraJumpsValue: 1
-  _sprint: 15
+  _sprint: 11
   AfterSprintSpeed: 7
 --- !u!114 &6954618085106112264
 MonoBehaviour:

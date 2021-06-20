@@ -7,8 +7,8 @@ public class Boss : MonoBehaviour
 {
     public Transform player;
     public int damage;
-    public float knockbackForce = 300;
-    public int maxHealth = 50;
+    public float knockbackForce = 400;
+    public int maxHealth = 100;
     int currentHealth;
 
     public bool isFlipped = false;
