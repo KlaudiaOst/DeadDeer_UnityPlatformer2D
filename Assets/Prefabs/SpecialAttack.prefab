@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  damage: 5
+  damage: 8
   rb: {fileID: 1848548583133009990}
 --- !u!95 &2136374194
 Animator:

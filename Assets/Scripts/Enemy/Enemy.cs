@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public int maxHealth= 3;
     int currentHealth;
 
+    public int count;
+
     public Transform player;
     public bool isFlipped = false;
 
@@ -52,10 +54,14 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died");
-        animator.SetBool("dead", true);
+        animator.SetBool("dead", true);     
 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        
+
+
 
     }
 
@@ -73,7 +79,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-
+    
 
 }
 

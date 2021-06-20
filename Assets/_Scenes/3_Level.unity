@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &95285172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 383178548, guid: 70548da62000f3b40a9ad67ee808aaff,
+    type: 3}
+  m_PrefabInstance: {fileID: 208725076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &125026032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3454,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &347823825 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1570646855, guid: 70548da62000f3b40a9ad67ee808aaff,
+    type: 3}
+  m_PrefabInstance: {fileID: 208725076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361945408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3740,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &598696555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375251924, guid: 70548da62000f3b40a9ad67ee808aaff,
+    type: 3}
+  m_PrefabInstance: {fileID: 208725076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &629093968 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1530811537, guid: 70548da62000f3b40a9ad67ee808aaff,
+    type: 3}
+  m_PrefabInstance: {fileID: 208725076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &642190725 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5672455543612985467, guid: 7c6bdda39c7527e43a57e0867ac3754e,
@@ -4361,6 +4409,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1155335630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 222160425, guid: 70548da62000f3b40a9ad67ee808aaff,
+    type: 3}
+  m_PrefabInstance: {fileID: 208725076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1164558788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6728934831097942032, guid: 831287dd251093d4b9d6babf41562470,
@@ -5129,6 +5189,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4257280638105295607, guid: 831287dd251093d4b9d6babf41562470,
+        type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1155335630}
+    - target: {fileID: 4257280638105295607, guid: 831287dd251093d4b9d6babf41562470,
+        type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 347823825}
+    - target: {fileID: 4257280638105295607, guid: 831287dd251093d4b9d6babf41562470,
+        type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 598696555}
+    - target: {fileID: 4257280638105295607, guid: 831287dd251093d4b9d6babf41562470,
+        type: 3}
+      propertyPath: hearts.Array.data[3]
+      value: 
+      objectReference: {fileID: 95285172}
+    - target: {fileID: 4257280638105295607, guid: 831287dd251093d4b9d6babf41562470,
+        type: 3}
+      propertyPath: hearts.Array.data[4]
+      value: 
+      objectReference: {fileID: 629093968}
     - target: {fileID: 6728934829777834775, guid: 831287dd251093d4b9d6babf41562470,
         type: 3}
       propertyPath: m_Name

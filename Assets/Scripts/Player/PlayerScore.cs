@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerScore : MonoBehaviour
 {
     public int coins;
+    
     //Text score;
 
     //void Start()
@@ -32,7 +33,9 @@ public class PlayerScore : MonoBehaviour
 
     public void ScoreCount(int count)
     {
-        coins += count; 
+        coins += count;
+        
+
         UpdateHUD();
     }
 

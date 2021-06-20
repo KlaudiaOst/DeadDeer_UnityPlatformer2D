@@ -169,6 +169,7 @@ MonoBehaviour:
   damage: 1
   knockbackForce: 300
   maxHealth: 3
+  count: 5
   player: {fileID: 0}
   isFlipped: 0
 --- !u!114 &739421709

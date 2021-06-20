@@ -31,5 +31,12 @@ public class SpecialAttackBullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
         Destroy(gameObject);
+
+        Boss boss = collision.GetComponent<Boss>();
+        if (boss != null)
+        {
+            boss.GetComponent<Boss>().TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 }
