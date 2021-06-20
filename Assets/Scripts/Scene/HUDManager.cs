@@ -22,9 +22,9 @@ public class HUDManager : MonoBehaviour
     }
 
 
-    public void SetPlayersSouls(int souls)
-    {
-        playerSouls.text = $"SOULS: {souls}";
-    }
+   // public void SetPlayersSouls(int souls)
+   // {
+   //     playerSouls.text = $"SOULS: {souls}";
+   // }
 
 }

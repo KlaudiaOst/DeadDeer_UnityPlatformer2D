@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Boss : MonoBehaviour
     public bool isFlipped = false;
 
     public HealthBar healthBar;
+
+    public string sceneNameToLoad;
 
     private void Start()
     {
@@ -61,6 +64,8 @@ public class Boss : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         Destroy(gameObject);
+        SceneManager.LoadScene(sceneNameToLoad);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -75,4 +80,14 @@ public class Boss : MonoBehaviour
             //animator.SetTrigger("attack");
         }
     }
+
+    //IEnumerator Win()
+    //{
+    //    if (currentHealth <= 0)
+    //    {
+    //        yield return new WaitForSeconds(5f);
+    //        SceneManager.LoadScene(sceneNameToLoad);
+    //    }
+        
+    //}
 }

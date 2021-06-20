@@ -26,6 +26,6 @@ public class PlayerSouls : MonoBehaviour
 
     public void UpdateHUD()
     {
-        GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersSouls(souls);
+        //GameObject.Find("Canvas-HUD").GetComponent<HUDManager>().SetPlayersSouls(souls);
     }
 }

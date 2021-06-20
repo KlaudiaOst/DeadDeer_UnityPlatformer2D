@@ -3163,6 +3163,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 834676790, guid: 70548da62000f3b40a9ad67ee808aaff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 880719979, guid: 70548da62000f3b40a9ad67ee808aaff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1551387353, guid: 70548da62000f3b40a9ad67ee808aaff, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -3193,6 +3201,11 @@ PrefabInstance:
     - target: {fileID: 1726613560004495321, guid: 70548da62000f3b40a9ad67ee808aaff,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726613560193731864, guid: 70548da62000f3b40a9ad67ee808aaff,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1726613560193731871, guid: 70548da62000f3b40a9ad67ee808aaff,
@@ -4161,6 +4174,7 @@ MonoBehaviour:
   maxHealth: 50
   isFlipped: 0
   healthBar: {fileID: 642190727}
+  sceneNameToLoad: 4_Scene
 --- !u!1 &953053430
 GameObject:
   m_ObjectHideFlags: 0

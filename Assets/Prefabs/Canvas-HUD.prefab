@@ -1682,7 +1682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1726613560193731869
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1777,8 +1777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57.200195, y: -34}
-  m_SizeDelta: {x: 300, y: 70}
+  m_AnchoredPosition: {x: 130, y: -70}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1726613561477230779
 CanvasRenderer:
@@ -1809,7 +1809,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f29bf1a8490223e4f8bed1302731dee4, type: 3}
-    m_FontSize: 16
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
@@ -1820,7 +1820,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'COINS:'
+  m_Text: 'SCORE:'
 --- !u!1 &1726613561799313656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +2025,7 @@ MonoBehaviour:
   playerHealth: {fileID: 1726613561799313662}
   playerScore: {fileID: 1726613561477230772}
   playerHeal: {fileID: 0}
-  playerSouls: {fileID: 1726613560193731871}
+  playerSouls: {fileID: 0}
 --- !u!1001 &3962844852475572424
 PrefabInstance:
   m_ObjectHideFlags: 0
