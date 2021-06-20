@@ -329,6 +329,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6728934829777834774}
   health: 5
+  numOfHearts: 5
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 1564688358316481467, guid: d3dae6b8996aeec4bb105511e1f32044,
+    type: 3}
+  emptyHeart: {fileID: 5726080727020278575, guid: d3dae6b8996aeec4bb105511e1f32044,
+    type: 3}
 --- !u!114 &2654764314031448187
 MonoBehaviour:
   m_ObjectHideFlags: 0

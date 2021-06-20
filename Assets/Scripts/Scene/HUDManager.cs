@@ -18,7 +18,7 @@ public class HUDManager : MonoBehaviour
 
     public void SetPlayersScore(int coins)
     {
-        playerScore.text = $"COINS: {coins}";
+        playerScore.text = $"SCORE: {coins}";
     }
 
     public void SetPlayersSouls(int souls)
